@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "7c8e59f0-f8c3-4ec9-ab84-a00afb2048ab",
+		"name": "Sensidia",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/beers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/beerhouse/beers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"beerhouse",
+						"beers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/beers",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n\t\"id\": 7,\r\n    \"name\": \"cerveja 07\",\r\n    \"ingredients\": \"agua, lupulo\",\r\n    \"alcoholContent\": \"Sim\",\r\n    \"price\": 2.99,\r\n    \"category\": \"Normal\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/beerhouse/beers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"beerhouse",
+						"beers"
+					]
+				},
+				"description": "Api de Inclusão de Cerveja"
+			},
+			"response": []
+		},
+		{
+			"name": "/beers/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/beerhouse/beers/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"beerhouse",
+						"beers",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/beers/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"cerveja 05 - put\",\r\n    \"ingredients\": \"agua, lupulo, açucar\",\r\n    \"alcoholContent\": \"Não\",\r\n    \"price\": 3.99,\r\n    \"category\": \"Premiun\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/beerhouse/beers/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"beerhouse",
+						"beers",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " ​/beers​/{id}",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 5,\r\n    \"name\": \"cerveja 05\",\r\n    \"ingredients\": \"agua, lupulo\",\r\n    \"alcoholContent\": \"Não\",\r\n    \"price\": 2.99,\r\n    \"category\": \"Normal\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/beerhouse/beers/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"beerhouse",
+						"beers",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " ​/beers​/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/beerhouse/beers/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"beerhouse",
+						"beers",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
