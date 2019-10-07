@@ -24,9 +24,9 @@ public class BeerService {
 		Beer beer = beerRepository.findOne(pinId);
 		
 		if (beer != null) {
-			beerRepository.saveAndFlush(beerUpdate);
+			return beerRepository.saveAndFlush(beerUpdate);
 		}
-		return beerUpdate;
+		return null;
 	}
 	
 	public Beer add(Beer beer) {
